@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>Route Creator</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYaSjbtIP5UYEe-LMpA334-xiHQjsY08A&sensor=false"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          <form>
+            <div class="form-group">
+              <label for="address-input" class="sr-only">Address</label>
+              <input id="address-input" placeholder="Zip Code">
+            </div>
+            <div class="form-group">
+              <label for="address-input" class="sr-only">Distance</label>
+              <input id="address-input" placeholder="Distance">
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-9">Map
+          <div id="map-canvas"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
