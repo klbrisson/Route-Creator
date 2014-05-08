@@ -3,20 +3,22 @@ extends layout
 block head
 	meta(name="viewport" content="initial-scale=1.0, user-scalable=no")
 	link(rel="stylesheet" type="text/css" href="css/map.css")
-	script(type="text/javascript" src!="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYaSjbtIP5UYEe-LMpA334-xiHQjsY08A&sensor=false")
-	script(type="text/javascript" src="js/map.js")
 
 block content
 	div.container
 		div.row
 			div.col-xs-3
 				form
-					div.form-group(method="post" action="/formSubmit")
+					div.form-group
 						label.sr-only(for="address-input") Address
 						input#address-input(name="address-input" placeholder="Zip Code")
 					div.form-group
 						label.sr-only(for="distance-input") Distance
 						input#distance-input(name="distance-input" placeholder="Distance")
-					button.btn.btn-default(type="submit") Submit
+					button.btn.btn-default#submit-btn Submit
 			div.col-xs-9
 				div#map-canvas
+
+block scripts
+	script(type="text/javascript" src!="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYaSjbtIP5UYEe-LMpA334-xiHQjsY08A&sensor=false")
+	script(type="text/javascript" src="js/map.js")

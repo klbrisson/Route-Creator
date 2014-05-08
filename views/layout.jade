@@ -7,7 +7,7 @@ html(lang='en')
 		title Route Creator
 		block head
 	body
-		nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
+		nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse#main-nav
 			div.container
 				ul.nav.navbar-nav
 					li: a(href="/") Home
@@ -19,3 +19,4 @@ html(lang='en')
 		block content
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
 		script(src="js/main.js")
+		block scripts

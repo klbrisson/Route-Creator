@@ -13,11 +13,6 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-app.post('/formSubmit', function(req, res) {
-	userInput = req.body;
-});
-
-
 var server = app.listen(9782, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
