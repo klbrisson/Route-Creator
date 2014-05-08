@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		link(rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css")
+		link(rel="stylesheet" type="text/css" href="css/main.css")
+		title Route Creator
+		block head
+	body
+		nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
+			div.container
+				ul.nav.navbar-nav
+					li: a(href="/") Home
+				ul.nav.navbar-nav.navbar-right
+					li: a(href="/") Sign In
+		div.page-header
+			div.container
+				h1 Route Finder
+		block content
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+		script(src="js/main.js")
